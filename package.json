@@ -1,0 +1,39 @@
+{
+  "name": "intcommit",
+  "version": "0.0.1",
+  "description": "Interactive commit that follows conventional commit messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhorak/intcommit.git"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "conventional",
+    "interactive"
+  ],
+  "author": "Lukas Horak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lhorak/intcommit/issues"
+  },
+  "homepage": "https://github.com/lhorak/intcommit#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "nodemon": "^1.19.1"
+  }
+}
